@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-09-02T14:46:12.146778" rpa="false" schemaversion="5">
+<suite id="s1" name="Humor" source="c:\dev\vscode\VSCode-win32-x64-1.76.0\RobotFeedzHumor\humor.robot">
+<test id="s1-t1" name="Entrar na pagina da Feedz e acessar minha conta" line="26">
+<kw name="Abrir navegador e acessar a feedz">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-02T14:46:12.330208" level="INFO">Opening browser 'Chrome' to base url 'https://app.feedz.com.br/'.</msg>
+<arg>url=https://app.feedz.com.br/</arg>
+<arg>browser=Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-02T14:46:12.330208" elapsed="5.183068"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-09-02T14:46:17.513276" elapsed="0.050221"/>
+</kw>
+<status status="PASS" start="2024-09-02T14:46:12.329211" elapsed="5.235287"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>1 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-09-02T14:46:17.566021" elapsed="0.000000"/>
+</kw>
+<kw name="inserir email e senha">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-02T14:46:17.574007" level="INFO">Typing text 'jacksonsantos@almavivasolutions.com.br' into text field 'id:login_email'.</msg>
+<arg>id:login_email</arg>
+<arg>jacksonsantos@almavivasolutions.com.br</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-02T14:46:17.570472" elapsed="3.364208"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-02T14:46:20.935695" level="INFO">Typing text 'JSdS210455$#' into text field 'id:passInput'.</msg>
+<arg>id:passInput</arg>
+<arg>JSdS210455$#</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-02T14:46:20.934680" elapsed="3.239686"/>
+</kw>
+<status status="PASS" start="2024-09-02T14:46:17.568457" elapsed="6.606425"/>
+</kw>
+<kw name="apertar o botão entrar">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-02T14:46:24.175897" level="INFO">Clicking button 'id:enter-login'.</msg>
+<arg>id:enter-login</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-02T14:46:24.175897" elapsed="5.148561"/>
+</kw>
+<status status="PASS" start="2024-09-02T14:46:24.175897" elapsed="5.149162"/>
+</kw>
+<kw name="selecionar o humor escolhido">
+<kw name="Set Selenium Page Load Timeout" owner="SeleniumLibrary">
+<arg>100s</arg>
+<doc>Sets the page load timeout value used by Selenium.</doc>
+<status status="PASS" start="2024-09-02T14:46:29.327080" elapsed="1.004283"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//html/body/main/div/div/div[4]/div[1]/form/div[1]/div/label[5]/img</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-09-02T14:46:30.331363" elapsed="70.998461"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-02T14:47:41.330848" level="INFO">Clicking element 'xpath=//html/body/main/div/div/div[4]/div[1]/form/div[1]/div/label[5]/img'.</msg>
+<arg>xpath=//html/body/main/div/div/div[4]/div[1]/form/div[1]/div/label[5]/img</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-02T14:47:41.330848" elapsed="2.100623"/>
+</kw>
+<status status="PASS" start="2024-09-02T14:46:29.326082" elapsed="74.106219"/>
+</kw>
+<kw name="submeter o botao enviar">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-02T14:47:43.435890" level="INFO">Clicking element 'id:fdz-btn-send-mood'.</msg>
+<arg>id:fdz-btn-send-mood</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-02T14:47:43.435104" elapsed="2.120146"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-02T14:47:46.556401" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-02T14:47:45.555250" elapsed="1.001151"/>
+</kw>
+<status status="PASS" start="2024-09-02T14:47:43.433310" elapsed="3.123091"/>
+</kw>
+<status status="PASS" start="2024-09-02T14:46:12.327207" elapsed="94.230268"/>
+</test>
+<status status="PASS" start="2024-09-02T14:46:12.153732" elapsed="94.406918"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Humor">Humor</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
